@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIP — RouteCart | Junpyo Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Junpyo Kim</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sip.html">SIP</a></li>
+        <li><a href="boards.html">Boards</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="sip.html">SIP</a>
+    <a href="boards.html">Boards</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <span class="label">SIP311 &mdash; Student Innovation Project</span>
+        <h1>RouteCart</h1>
+        <p>Grocery Trip Optimization &mdash; Junpyo Kim &middot; AI &amp; Data Science &middot; University of Advancing Technology</p>
+      </div>
+    </div>
+
+    <!-- Problem Statement -->
+    <section id="problem">
+      <div class="container">
+        <span class="label">The Problem</span>
+        <h2>Problem Statement</h2>
+        <div class="card" style="margin-top: 1.75rem; border-left: 3px solid var(--accent);">
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.85;">
+            Households increasingly split grocery trips across multiple nearby stores to balance price, quality, and availability, but existing tools rarely tell them whether splitting a trip is worth the added time or gas. Shoppers need a decision assistant that compares item-level options, predicts acceptable substitutions, and recommends the cheapest, fastest, or best-value route through nearby stores.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Innovation Claim -->
+    <section id="innovation">
+      <div class="container">
+        <span class="label">Innovation Claim</span>
+        <h2>What RouteCart Does</h2>
+        <p class="section-lead">
+          A mobile app that takes a grocery list, identifies nearby stores, normalizes unit prices and package sizes, estimates travel cost and trip time, and returns three ranked plans.
+        </p>
+        <div class="card-grid grid-3">
+          <div class="card">
+            <div class="label" style="margin-bottom: 0.5rem;">Plan A</div>
+            <h3>Cheapest</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.4rem;">Minimizes total item cost across all stores, accounting for unit price normalization and package sizes.</p>
+          </div>
+          <div class="card">
+            <div class="label" style="margin-bottom: 0.5rem;">Plan B</div>
+            <h3>Fastest</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.4rem;">Minimizes total trip time by optimizing routing and limiting the number of store stops.</p>
+          </div>
+          <div class="card">
+            <div class="label" style="margin-bottom: 0.5rem;">Plan C</div>
+            <h3>Best Value</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.4rem;">Balances savings against travel time and gas cost — answers: is splitting your trip actually worth it?</p>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 1.25rem;">
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            <strong style="color: var(--text);">Explainability &amp; Confidence:</strong> RouteCart explains whether splitting a trip across multiple stores is worth it and shows a confidence score for price and availability data — so shoppers always understand the recommendation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Description & Scope -->
+    <section id="description">
+      <div class="container">
+        <span class="label">Project Description &amp; Scope</span>
+        <h2>What's Being Built</h2>
+        <p class="section-lead">
+          A working mobile MVP that lets a user enter a grocery list, compare stores in their vicinity, and receive ranked trip recommendations.
+        </p>
+
+        <div class="card-grid grid-2" style="margin-bottom: 2rem;">
+          <div class="card">
+            <h3 style="margin-bottom: 0.75rem;">MVP Scope</h3>
+            <ul style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.9; list-style: disc; padding-left: 1.25rem;">
+              <li>50–100 common grocery items</li>
+              <li>5–10 stores in the user's vicinity</li>
+              <li>Comparison: 1 store vs. 3-store routes</li>
+              <li>Price freshness &amp; confidence score</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-bottom: 0.75rem;">Budget &amp; Resources</h3>
+            <p style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.85;">
+              Small API budget allocated for maps API or preloaded route estimates. Backend built with Python and a relational database. Mobile frontend in React Native.
+            </p>
+          </div>
+        </div>
+
+        <h3 style="margin-bottom: 1.25rem;">Development Timeline</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">May &ndash; August</div>
+            <h4>Planning &amp; Backend</h4>
+            <p>Project planning, architecture design, developing backend with Python and database setup.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">September &ndash; January</div>
+            <h4>Mobile App &amp; Routing</h4>
+            <p>Develop mobile app with React Native, integrate geolocation and routing APIs.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">February &ndash; March</div>
+            <h4>Scoring, UX &amp; Polish</h4>
+            <p>Implement scoring logic, conduct UX testing, and polish MVP for final pitch.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">April</div>
+            <h4>Final Pitch &amp; Demo</h4>
+            <p>Finalize mobile app optimization, final pitch, and demo presentation for SIP.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills">
+      <div class="container">
+        <span class="label">Technical Expertise &amp; Skills</span>
+        <h2>Tools &amp; Technologies</h2>
+        <p class="section-lead">
+          This project draws on app development with supporting areas in software engineering, data science, and AI.
+        </p>
+
+        <div class="card-grid grid-2">
+          <div class="card">
+            <h3 style="margin-bottom: 0.85rem;">Technologies &amp; Skills</h3>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">React Native</span>
+              <span class="tag">JavaScript / TypeScript</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Database Design</span>
+              <span class="tag">API Integration</span>
+              <span class="tag">Geolocation &amp; Mapping APIs</span>
+              <span class="tag">Route Optimization Logic</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3 style="margin-bottom: 0.85rem;">Relevant Coursework</h3>
+            <div class="tags">
+              <span class="tag tag-course">CSC235</span>
+              <span class="tag tag-course">CSC285</span>
+              <span class="tag tag-course">CSC311</span>
+              <span class="tag tag-course">CSC312</span>
+              <span class="tag tag-course">CSC318</span>
+              <span class="tag tag-course">CSC342</span>
+              <span class="tag tag-course">CSC352</span>
+              <span class="tag tag-course">CSC370</span>
+              <span class="tag tag-course">CSC373</span>
+              <span class="tag tag-course">CSC436</span>
+              <span class="tag tag-course">CSC484</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Market -->
+    <section id="market">
+      <div class="container">
+        <span class="label">Target Market</span>
+        <h2>Who This Is For</h2>
+        <p class="section-lead">
+          RouteCart creates value by reducing wasted time, lowering grocery costs, and making the "is multi-trip worth it?" decision easier to understand.
+        </p>
+
+        <div class="card" style="margin-bottom: 1.25rem; border-left: 3px solid var(--accent);">
+          <p style="color: var(--text-muted); line-height: 1.85;">
+            This project is intended for <strong style="color: var(--text);">budget-conscious grocery shoppers</strong> who already plan their trip via manual pricing research and value savings and time.
+          </p>
+        </div>
+
+        <div class="card-grid grid-2">
+          <div class="card">
+            <h3 style="margin-bottom: 0.75rem;">Primary Demographics</h3>
+            <ul style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.9; list-style: disc; padding-left: 1.25rem;">
+              <li>Families with weekly grocery budgets</li>
+              <li>College students and young adults with limited disposable income</li>
+              <li>Coupon and deal shoppers</li>
+              <li>Urban/suburban shoppers with multiple stores in their vicinity</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-bottom: 0.75rem;">Generational Context</h3>
+            <ul style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.9; list-style: none;">
+              <li>Baby Boomers (born 1946–1964)</li>
+              <li>Generation X (born 1965–1979)</li>
+              <li>Millennials / Gen Y (born 1980–1994)</li>
+              <li>Generation Z (born 1995–2009)</li>
+              <li>Generation Alpha (born 2010–2024)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prior Art -->
+    <section id="prior-art">
+      <div class="container">
+        <span class="label">Prior Art &amp; Competitive Landscape</span>
+        <h2>How RouteCart Differs</h2>
+        <p class="section-lead">
+          Nine existing tools were evaluated. Each addresses part of the grocery problem — RouteCart uniquely combines route scoring, travel cost, and trip-split decision support.
+        </p>
+
+        <div class="prior-art-list">
+
+          <div class="prior-art-item">
+            <div>
+              <div class="prior-art-name">Flipp</div>
+              <div class="prior-art-diff">RouteCart: compares basket-level savings against travel time and recommends route</div>
+            </div>
+            <div class="prior-art-desc">Aggregates weekly ads, local deals, and shopping list support.</div>
+          </div>
+
+          <div class="prior-art-item">
+            <div>
+              <div class="prior-art-name">Basket Savings</div>
+              <div class="prior-art-diff">RouteCart: adds multi-store route scoring with mileage &amp; time penalties and price confidence logic</div>
+            </div>
+            <div class="prior-art-desc">Builds shopping lists and compares grocery prices between local stores.</div>
+          </div>
+
+          <div class="prior-art-item">
+            <div>
+              <div class="prior-art-name">Grocery Dealz</div>
+              <div class="prior-art-diff">RouteCart: focuses on whether the multi-trip is worth the extra time and travel cost</div>
+            </div>
+            <div class="prior-art-desc">Compares grocery prices and helps shoppers build carts for multiple stores.</div>
+          </div>
+
+          <div class="prior-art-item">
+            <div>
+              <div class="prior-art-name">Cart Companion</div>
+              <div class="prior-art-diff">RouteCart: evaluates total-trip value across multiple stores</div>
+            </div>
+            <div class="prior-art-desc">Organizes a grocery list into the fastest route inside a single store.</div>
+          </div>
+
+          <div class="prior-art-item">
+            <div>
+              <div class="prior-art-name">Instacart Store View</div>
+              <div class="prior-art-diff">RouteCart: helps the consumer decide their route before leaving home</div>
+            </div>
+            <div class="prior-art-desc">Helps online shoppers and fulfillment workflows deal with store availability and missing items.</div>
+          </div>
+
+          <div class="prior-art-item">
+            <div>
+              <div class="prior-art-name">Uber Eats Cart Assistant</div>
+              <div class="prior-art-diff">RouteCart: applies decision support to physical nearby shopping, route value, and trip planning</div>
+            </div>
+            <div class="prior-art-desc">Uses AI to build a grocery basket from text or images for delivery.</div>
+          </div>
+
+          <div class="prior-art-item">
+            <div>
+              <div class="prior-art-name">Grocery Routes</div>
+              <div class="prior-art-diff">RouteCart: evaluates savings from cost of goods AND travel time and expense</div>
+            </div>
+            <div class="prior-art-desc">Compares every item on a shopping list across stores and builds a single cheapest trip.</div>
+          </div>
+
+          <div class="prior-art-item">
+            <div>
+              <div class="prior-art-name">Stretch</div>
+              <div class="prior-art-diff">RouteCart: evaluates whether the deals are worth extra travel time and expense</div>
+            </div>
+            <div class="prior-art-desc">Helps consumers compare prices across local stores for the best deals.</div>
+          </div>
+
+          <div class="prior-art-item">
+            <div>
+              <div class="prior-art-name">Smart Grocery Shopping Assistant</div>
+              <div class="prior-art-diff">RouteCart: is a presentable MVP for nearby physical trips with explainable route scoring</div>
+            </div>
+            <div class="prior-art-desc">Academic concept for finding cheaper grocery options with cost optimization and substitutions.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof of Concept / Prototype -->
+    <section id="prototype">
+      <div class="container">
+        <span class="label">Proof of Concept &amp; Early-Stage Prototype</span>
+        <h2>Prototype &amp; Visuals</h2>
+        <p class="section-lead">
+          Screenshots, diagrams, concept art, and prototype assets will be added here as the project progresses.
+        </p>
+
+        <div class="placeholder-box" style="margin-bottom: 1.25rem;">
+          <h3>&#128247; Prototype Assets Coming Soon</h3>
+          <p>Add screenshots, wireframes, Figma mockups, architecture diagrams, and photos of project pieces here.</p>
+        </div>
+
+        <div class="image-grid">
+          <div class="image-slot">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Screenshot / Mockup</span>
+          </div>
+          <div class="image-slot">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Architecture Diagram</span>
+          </div>
+          <div class="image-slot">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Concept Art / Blueprint</span>
+          </div>
+          <div class="image-slot">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>UI Flow</span>
+          </div>
+          <div class="image-slot">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Project Photo</span>
+          </div>
+          <div class="image-slot">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Data / Results</span>
+          </div>
+        </div>
+
+        <!-- GitHub Code Link -->
+        <div class="card" style="margin-top: 1.5rem;">
+          <h3 style="margin-bottom: 0.5rem;">&#128187; Source Code</h3>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 0.75rem;">The RouteCart repository will be linked here once available on GitHub.</p>
+          <a href="https://github.com/junk-1/RouteCart" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIP Brief -->
+    <section id="brief">
+      <div class="container">
+        <span class="label">Week 4 Assignment</span>
+        <h2>SIP Brief</h2>
+        <p class="section-lead">
+          The SIP Brief document will be embedded or linked here once it is finalized.
+        </p>
+
+        <div class="placeholder-box">
+          <h3>&#128196; SIP Brief — Coming Soon</h3>
+          <p>
+            Replace this placeholder with an embedded Google Doc, PDF viewer, or direct link to your Week 4 SIP Brief assignment.<br />
+            <span style="margin-top: 0.5rem; display: inline-block; color: var(--accent);">Tip: Paste an embed URL below to activate the iframe.</span>
+          </p>
+        </div>
+
+        <!-- Uncomment and paste your embed URL to activate -->
+        <!--
+        <div class="brief-slot" style="margin-top: 1.5rem;">
+          <iframe src="YOUR_EMBED_URL_HERE" title="SIP Brief"></iframe>
+        </div>
+        -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Junpyo Kim &mdash; University of Advancing Technology &mdash; AI &amp; Data Science</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

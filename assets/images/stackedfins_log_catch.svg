@@ -1,0 +1,69 @@
+<svg viewBox="0 0 390 844" xmlns="http://www.w3.org/2000/svg" width="390" height="844">
+  <defs>
+    <clipPath id="phone2-clip">
+      <rect x="0" y="0" width="390" height="844" rx="40" ry="40"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#phone2-clip)">
+    <rect x="0" y="0" width="390" height="844" fill="#0d1117"/>
+    <!-- STATUS BAR -->
+    <text x="24" y="22" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="white">9:41</text>
+    <rect x="330" y="12" width="40" height="14" rx="3" fill="none" stroke="white" stroke-width="1.5" opacity="0.6"/>
+    <rect x="333" y="15" width="28" height="8" rx="1.5" fill="white" opacity="0.6"/>
+    <rect x="372" y="15" width="3" height="6" rx="1" fill="white" opacity="0.4"/>
+    <rect x="295" y="20" width="3" height="6" rx="1" fill="white" opacity="0.6"/>
+    <rect x="302" y="17" width="3" height="9" rx="1" fill="white" opacity="0.6"/>
+    <rect x="309" y="14" width="3" height="12" rx="1" fill="white" opacity="0.6"/>
+    <rect x="137" y="10" width="116" height="34" rx="20" fill="black"/>
+    <!-- HEADER -->
+    <polyline points="32,72 22,80 32,88" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="48" y="83" font-family="system-ui,sans-serif" font-size="13" fill="#1D9E75">Map</text>
+    <text x="195" y="84" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">New catch</text>
+    <!-- PHOTO SECTION -->
+    <rect x="16" y="102" width="358" height="210" rx="16" fill="#161b22"/>
+    <rect x="153" y="155" width="84" height="62" rx="12" fill="none" stroke="#2d3748" stroke-width="2"/>
+    <circle cx="195" cy="186" r="18" fill="none" stroke="#2d3748" stroke-width="2"/>
+    <circle cx="195" cy="186" r="10" fill="none" stroke="#2d3748" stroke-width="2"/>
+    <rect x="207" y="159" width="14" height="10" rx="4" fill="#2d3748"/>
+    <text x="195" y="238" font-family="system-ui,sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">Tap to take photo</text>
+    <text x="195" y="256" font-family="system-ui,sans-serif" font-size="11" fill="#4b5563" text-anchor="middle">In-app capture only — no uploads</text>
+    <rect x="176" y="265" width="38" height="26" rx="6" fill="#1a2535"/>
+    <rect x="183" y="259" width="10" height="10" rx="5" fill="none" stroke="#4b5563" stroke-width="1.5"/>
+    <text x="195" y="282" font-family="system-ui,sans-serif" font-size="9" fill="#4b5563" text-anchor="middle">GPS locked</text>
+    <!-- FORM FIELDS -->
+    <text x="24" y="338" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" font-weight="500">SPECIES</text>
+    <rect x="16" y="346" width="358" height="44" rx="12" fill="#161b22"/>
+    <text x="34" y="373" font-family="system-ui,sans-serif" font-size="14" fill="#e5e7eb">Largemouth bass</text>
+    <polyline points="354,362 362,370 354,378" fill="none" stroke="#4b5563" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="24" y="412" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" font-weight="500">LENGTH (IN)</text>
+    <text x="213" y="412" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" font-weight="500">WEIGHT (LB)</text>
+    <rect x="16" y="420" width="170" height="44" rx="12" fill="#161b22"/>
+    <text x="34" y="447" font-family="system-ui,sans-serif" font-size="14" fill="#e5e7eb">14.5</text>
+    <rect x="204" y="420" width="170" height="44" rx="12" fill="#161b22"/>
+    <text x="222" y="447" font-family="system-ui,sans-serif" font-size="14" fill="#e5e7eb">1.8</text>
+    <text x="24" y="486" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" font-weight="500">ZONE (AUTO-DETECTED)</text>
+    <rect x="16" y="494" width="358" height="44" rx="12" fill="#0d2218"/>
+    <circle cx="36" cy="516" r="5" fill="#1D9E75"/>
+    <text x="50" y="521" font-family="system-ui,sans-serif" font-size="13" fill="#1D9E75">Arizona Canal West</text>
+    <text x="350" y="521" font-family="system-ui,sans-serif" font-size="11" fill="#4b5563" text-anchor="end">auto</text>
+    <text x="24" y="558" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" font-weight="500">CONDITIONS (AUTO-LOGGED)</text>
+    <rect x="16" y="566" width="358" height="84" rx="12" fill="#161b22"/>
+    <rect x="28" y="580" width="72" height="26" rx="13" fill="#1a2535"/>
+    <text x="64" y="597" font-family="system-ui,sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">91°F</text>
+    <rect x="108" y="580" width="80" height="26" rx="13" fill="#1a2535"/>
+    <text x="148" y="597" font-family="system-ui,sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">Partly cloudy</text>
+    <rect x="196" y="580" width="64" height="26" rx="13" fill="#1a2535"/>
+    <text x="228" y="597" font-family="system-ui,sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">1.4 kn wind</text>
+    <rect x="268" y="580" width="90" height="26" rx="13" fill="#1a2535"/>
+    <text x="313" y="597" font-family="system-ui,sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">Solunar: major</text>
+    <text x="28" y="630" font-family="system-ui,sans-serif" font-size="11" fill="#4b5563">USGS flow:</text>
+    <text x="96" y="630" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">142 cfs  ·  pH 8.1  ·  76°F water</text>
+    <text x="24" y="666" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" font-weight="500">NOTES (OPTIONAL)</text>
+    <rect x="16" y="674" width="358" height="56" rx="12" fill="#161b22"/>
+    <text x="34" y="700" font-family="system-ui,sans-serif" font-size="13" fill="#4b5563">Morning bite near the bridge pilings...</text>
+    <!-- SUBMIT -->
+    <rect x="16" y="748" width="358" height="52" rx="26" fill="#1D9E75"/>
+    <text x="195" y="779" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="white" text-anchor="middle">Verify &amp; log catch</text>
+    <rect x="130" y="818" width="130" height="4" rx="2" fill="white" opacity="0.2"/>
+  </g>
+</svg>
